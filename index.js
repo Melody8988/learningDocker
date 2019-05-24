@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Connect to MongoDB
 mongoose
   .connect(
+    // mongo is written here to map to the serivce name (the container name)
     'mongodb://mongo:27017/docker-node-mongo',
     { useNewUrlParser: true }
   )
